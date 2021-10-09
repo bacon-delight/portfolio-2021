@@ -1,0 +1,70 @@
+// ----------
+// Elementary
+// ----------
+$color-primary: #d86357;
+$color-secondary: #ff847c;
+
+// -------------------
+// Elementary Enhanced
+// -------------------
+$color-primary-variant: #d86357;
+$color-secondary-variant: #ff847c;
+
+// -------
+// General
+// -------
+$color-dark: #000000;
+$color-dark-faded: #2a363b;
+$color-light: #ffffff;
+$color-light-faded: #ebebeb;
+
+// -----------------
+// User Interactions
+// -----------------
+$color-background-content: #f9f3ee;
+$color-background-highlight: #8e8d89;
+
+// ---------
+// Gradients
+// ---------
+$gradient-linear-mix-diagonal: linear-gradient(
+	45deg,
+	#ca4246 16.666%,
+	#e16541 16.666%,
+	#e16541 33.333%,
+	#f18f43 33.333%,
+	#f18f43 50%,
+	#8b9862 50%,
+	#8b9862 66.666%,
+	#476098 66.666%,
+	#476098 83.333%,
+	#a7489b 83.333%
+);
+$gradient-linear-mix-vertical: linear-gradient(
+	to bottom,
+	#ca4246 16.666%,
+	#e16541 16.666%,
+	#e16541 33.333%,
+	#f18f43 33.333%,
+	#f18f43 50%,
+	#8b9862 50%,
+	#8b9862 66.666%,
+	#476098 66.666%,
+	#476098 83.333%,
+	#a7489b 83.333%
+);
+
+// -----------------
+// Additional Colors
+// -----------------
+$color-warning: #ffb72e;
+$color-error: #ef5350;
+$color-info: #3c99dc;
+$color-success: #5cb85c;
+
+// -----------
+// Box Shadows
+// -----------
+$box-shadow-heavy: 1px 2px 8px rgba($color-dark-faded, 0.3);
+$box-shadow-medium: 0 2px 3px rgba($color-dark-faded, 0.2);
+$box-shadow-light: 0 2px 3px rgba($color-dark-faded, 0.1);

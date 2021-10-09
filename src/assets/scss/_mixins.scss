@@ -1,0 +1,97 @@
+// ---------------------
+// Component Positioning
+// ---------------------
+@mixin absolute-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+@mixin absolute-top {
+	position: absolute;
+	top: 5%;
+	left: 50%;
+	transform: translate(-50%, -100%);
+}
+
+@mixin absolute-bottom {
+	position: absolute;
+	top: 95%;
+	left: 50%;
+	transform: translate(-50%, -100%);
+}
+
+@mixin block-centered {
+	display: block;
+	margin: 0 auto;
+}
+
+@mixin full-width-centered {
+	width: 100%;
+	text-align: center;
+}
+
+// ----------------
+// Component Sizing
+// ----------------
+@mixin full-viewport {
+	height: 100vh;
+	width: 100vw;
+}
+
+// ------
+// Scroll
+// ------
+@mixin scroll-vertical {
+	&::-webkit-scrollbar-track {
+		-webkit-box-shadow: inset 0 0 6px rgba($color-dark-faded, 0.3);
+		background-color: $color-dark-faded;
+	}
+
+	&::-webkit-scrollbar {
+		width: 6px;
+		background-color: $color-dark-faded;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background: $gradient-linear-mix-vertical;
+	}
+}
+
+// ---------------
+// Scooped Corners
+// ---------------
+@mixin scoop-corners($sw, $ne, $nw, $se, $bg) {
+	background: radial-gradient(circle at 0% 100%, transparent $sw, $bg $sw)
+			no-repeat,
+		radial-gradient(circle at 100% 0%, transparent $ne, $bg $ne) no-repeat,
+		radial-gradient(circle at 0% 0%, transparent $nw, $bg $nw) no-repeat,
+		radial-gradient(circle at 100% 100%, transparent $se, $bg $se) no-repeat;
+	background-position: 0% 100%, 100% 0%, 0% 0%, 100% 100%;
+	background-size: 75% 75%;
+}
+
+// -------------
+// Frosted Glass
+// -------------
+@mixin frosted-glass {
+	background: rgba($color-light-faded, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+}
+
+// -------------
+// Input Helpers
+// -------------
+@mixin autofill-color($color) {
+	&:-webkit-autofill {
+		-webkit-text-fill-color: $color;
+	}
+}
+
+@mixin placeholder-color($color) {
+	&::placeholder {
+		color: $color;
+	}
+}
