@@ -1,8 +1,16 @@
 <template>
 	<div class="content">
-		<router-view />
+		<router-view @addObjectToScene="addObjectToScene" />
 	</div>
 </template>
+
+<script>
+import animation from "@/mixins/animation";
+export default {
+	name: "App",
+	mixins: [animation],
+};
+</script>
 
 <style lang="scss">
 @import "@/assets/scss/global.scss";
@@ -19,6 +27,9 @@ body {
 }
 
 .content {
+	position: absolute;
+	@include full-viewport;
 	font-size: 1.6rem;
+	color: $color-light-faded;
 }
 </style>
