@@ -1,6 +1,6 @@
 # Portfolio 2021
 
--   [View Portfolio](https://dipanjande.com)
+[View Portfolio](https://dipanjande.com)
 
 ### About
 
