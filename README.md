@@ -1,24 +1,27 @@
-# portfolio-2021
+# Portfolio 2021
 
-## Project setup
-```
-npm install
-```
+-   [View Portfolio](https://dipanjande.com)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+### About
 
-### Compiles and minifies for production
-```
-npm run build
-```
+This is an upgrade to my 2019 portfolio, where I used most of the awesome stuff I learnt in the past two years and brought it all together. Notably, in this project, I've tried to integrate ThreeJS and GSAP into Vue, among other things, like Internationalization of the application.
 
-### Lints and fixes files
-```
-npm run lint
-```
+##### References
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+-   [Portfolio 2019](https://github.com/bacon-delight/portfolio-2019)
+
+### Project Setup
+
+```bash
+# Install Dependencies
+$ npm run install
+
+# Development Build
+$ npm run serve
+
+# Production Build
+$ npm run build
+
+# Fix Lint Errors
+$ npm run lint
+```
